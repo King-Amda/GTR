@@ -11,12 +11,13 @@ from helper.langlist import langlist
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
           insert(int(message.chat.id))
-          await message.reply_sticker(sticker = "CAACAgUAAxkBAAEBN9FhhMQq99NL0eY70r47LmPghi9fsQAC2QUAAss5KFT5r0lsTegDZiIE")
-          await message.reply_text(text =f"👋 Hello **{message.from_user.first_name }**. \n\nI am simple Google Translater Bot.**I can translate any language to you selected language** My Dear **`{message.from_user.first_name }`**  __\n\n**Powerd By** @SDbotsz. 🔥",
-          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("SDBOTs News 🙋‍♀️", url="https://t.me/SDBOTs_Inifinity")],
-               [InlineKeyboardButton("Bot Support 💬", url="https://t.me/SDBOTz"),
-	       InlineKeyboardButton("Scource 💾", url="https://Github.com/Sadew451"),
-	       InlineKeyboardButton("Devoloper 👑",url = "https://t.me/Itz_Sadew")]])
+          await message.reply_sticker(sticker = "CAACAgUAAxkBAAECUT5iI0htZBOS492-JvVS9wxbLoYV1AAC_AQAAjQSoFSeT9MdI1FElSME")
+          await message.reply_text(text =f"𝐻𝑒𝑙𝑙𝑜 **{message.from_user.first_name }**. \n\n𝐼 𝐴𝑚 𝑆𝑎𝑙𝑙𝑦 𝑇𝑟𝑎𝑛𝑠𝑙𝑎𝑡𝑜𝑟 𝐵𝑜𝑡.**𝐼 𝑐𝑎𝑛 𝑡𝑟𝑎𝑛𝑠𝑙𝑎𝑡𝑒 𝑎𝑛𝑦 𝑙𝑎𝑛𝑔𝑢𝑎𝑔𝑒 𝑡𝑜 𝑦𝑜𝑢 𝑠𝑒𝑙𝑒𝑐𝑡𝑒𝑑 𝑙𝑎𝑛𝑔𝑢𝑎𝑔𝑒** ",
+          reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ 🙋‍♀️", url="https://t.me/SDBOTs_Inifinity"),
+					      InlineKeyboardButton("Uᴘᴅᴀᴛᴇs 🔔", url="https://t.me/SDBOTs_Inifinity")
+					     ],
+               [InlineKeyboardButton("Oᴛʜᴇʀ 🌹", url="https://t.me/TheSallysBot"),
+	       InlineKeyboardButton("Dᴇᴠᴏʟᴏᴘᴇʀ 👑",url = "https://t.me/NiupunDinujaya")]])
 	  ),
 
 @Client.on_message(filters.private & filters.text  )
@@ -48,7 +49,7 @@ async def echo(client, message):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton("▶️",callback_data = "page2")
+	[InlineKeyboardButton("Next ▶️",callback_data = "page2")
 	]
 	] )
 	try:
@@ -105,7 +106,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton("▶️",callback_data = "page2")
+	[InlineKeyboardButton("Next ▶️",callback_data = "page2")
 	]
 	] )
 
@@ -134,8 +135,8 @@ async def translate_text(bot,update):
            InlineKeyboardButton("Indonesian",callback_data = "id"),
            InlineKeyboardButton("Irish",callback_data = "ga")
            ],
-           [InlineKeyboardButton("◀️",callback_data = "page1"),
-           InlineKeyboardButton("▶",callback_data = "page3"),
+           [InlineKeyboardButton("◀️ Preview",callback_data = "page1"),
+           InlineKeyboardButton("Next ▶",callback_data = "page3"),
            ]
             ])
 		
@@ -164,8 +165,8 @@ async def translate_text(bot,update):
                 InlineKeyboardButton("Malagasy",callback_data ="mg"),
                 InlineKeyboardButton("Malay",callback_data ="ms")
                 ],
-                [InlineKeyboardButton("◀️",callback_data = "page2"),
-                InlineKeyboardButton("▶️",callback_data = "page4")
+                [InlineKeyboardButton("◀️ Preview",callback_data = "page2"),
+                InlineKeyboardButton("Next ▶️",callback_data = "page4")
                 ]
               
  
@@ -196,8 +197,8 @@ async def translate_text(bot,update):
           InlineKeyboardButton("Russian",callback_data = "ru"),
           InlineKeyboardButton("Samoan",callback_data= "sm"),
           ],
-          [InlineKeyboardButton("◀️",callback_data = "page3"),
-          InlineKeyboardButton("▶️",callback_data = "page5")
+          [InlineKeyboardButton("◀️ Preview",callback_data = "page3"),
+          InlineKeyboardButton("Next ▶️",callback_data = "page5")
           ]
           
  
@@ -230,8 +231,8 @@ async def translate_text(bot,update):
          InlineKeyboardButton("Tatar",callback_data = "tt"),
          InlineKeyboardButton("Telugu",callback_data = "te")
          ],
-         [InlineKeyboardButton("◀️",callback_data = "page4"),
-         InlineKeyboardButton("▶️",callback_data = "page6")
+         [InlineKeyboardButton("◀️ Preview",callback_data = "page4"),
+         InlineKeyboardButton("Next ▶️",callback_data = "page6")
          ]  ])
 
 
@@ -255,7 +256,7 @@ async def translate_text(bot,update):
        [InlineKeyboardButton("Xhosa",callback_data = "xh"),
        InlineKeyboardButton("Yiddish",callback_data = "yi"),
        InlineKeyboardButton("Yoruba",callback_data = "yo")],
-       [InlineKeyboardButton("◀️",callback_data = "page5")
+       [InlineKeyboardButton("◀️ Preview",callback_data = "page5")
        
        ] ])
       
@@ -288,9 +289,9 @@ async def translate_text(bot,update):
       					fromt = i
       				if list[i] == translation.dest:
       					to = i 
-      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @lntechnical")
+      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @lTheSallyUpdates")
       		except Exception as e:
-      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @lntechnical")
+      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @TheSallyUpdates")
       						
 
             
@@ -345,9 +346,9 @@ async def echo(client, message):
 							fromt = i
 						if list[i] == translation.dest:
 							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @SDBotsz 🔥")
+					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @TheSallyUpdates 🔥")
 			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n We Are @SDBOTz join @SDBotsz 🔥")
+					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n  join @TheSallyUpdates 🔥")
 	else:
 		await  message.reply_text("Select language 🔽",reply_to_message_id = message.message_id, reply_markup =keybord1)
 
@@ -563,7 +564,7 @@ async def translate_text(bot,update):
       					fromt = i
       				if list[i] == translation.dest:
       					to = i 
-      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n{translation.text}\n\n join @SDBotsz 🔥")
+      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n{translation.text}\n\n join @TheSallyUpdates 🔥")
       		except Exception as e:
-      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n{translation.text}\n\n join @SDBotsz 🔥")
+      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n{translation.text}\n\n join @TheSallyUpdates 🔥")
       						
